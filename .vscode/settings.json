@@ -3,9 +3,9 @@
     "TF_LOG": "DEBUG",
     "TF_ACC": "1",
     "SKIP_S3_TESTS": "1",
-    "NEXUS_URL": "http://127.0.0.1:8081",
-    "NEXUS_USERNAME": "admin",
-    "NEXUS_PASSWORD": "admin123"
+    "NEXUS_URL": "https://nexus.test.apps.union-investment.de/",
+    "NEXUS_USERNAME": "",
+    "NEXUS_PASSWORD": ""
   },
   "go.buildFlags": [
     "-v"

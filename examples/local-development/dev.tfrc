@@ -6,7 +6,7 @@ provider_installation {
   # nexus provider plugin in the given directory.
   # relative path also works, but no variable or ~ evaluation
   dev_overrides {
-    "datadrivers/nexus" = "../../"
+    "datadrivers/nexus" = "/home/uitdeveloper/Develop/UIT/IIM PWS/TIM/terraform-provider-nexus"
   }
 
   # For all other providers, install them directly from their origin provider

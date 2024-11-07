@@ -1,0 +1,6 @@
+provider_installation {
+  dev_overrides {
+    "datadrivers/nexus" = "/home/uitdeveloper/Develop/UIT/IIM PWS/TIM/terraform-provider-nexus"
+  }
+  direct {}
+}
