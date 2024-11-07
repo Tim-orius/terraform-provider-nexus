@@ -1,6 +1,6 @@
 module github.com/datadrivers/terraform-provider-nexus
 
-go 1.22.1
+go 1.23
 
 require (
 	github.com/client9/misspell v0.3.4
@@ -245,5 +245,6 @@ require (
 )
 
 replace github.com/datadrivers/go-nexus-client => ../go-nexus-client
+
 //replace github.com/datadrivers/go-nexus-client => C:\Develop\IdeaProjects\go-nexus-client
 //replace github.com/datadrivers/go-nexus-client => /home/uitdeveloper/Develop/IdeaProjects/go-nexus-client

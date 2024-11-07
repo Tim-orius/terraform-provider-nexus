@@ -1,28 +1,15 @@
-resource "nexus_blobstore_file" "blobby" {
-
-  name = "blobby"
-  path = "/nexus-data/blobby"
-
-  soft_quota {
-    limit = 1024000000
-    type  = "spaceRemainingQuota"
-  }
+resource "nexus_cleanup_policy" "policy" {
+  name                       = "maven-cleanup-policy"
+  notes                      = "Cleanup policy for maven2 artifacts"
+  criteria_last_blob_updated = 60
+  retain                     = 3
+  criteria_release_type      = "RELEASES"
+  format                     = "maven2"
 }
 
-resource "nexus_repository_docker_hosted" "example" {
-  name = "example-container"
-
-  storage {
-    blob_store_name = "default"
-    strict_content_type_validation = false
-  }
-
-  docker {
-    v1_enabled = false
-    force_basic_auth = false
-  }
+resource "nexus_cleanup_policy" "policy2" {
+  name                       = "docker-age-3days"
+  notes                      = "Cleanup policy for docker artifacts"
+  criteria_last_blob_updated = 3
+  format                     = "docker"
 }
-
-# resource "nexus_security_cleanup_policy" "cleanup" {
-#   name = "CleanerUpper"
-# }

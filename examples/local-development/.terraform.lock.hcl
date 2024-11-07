@@ -2,7 +2,8 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/datadrivers/nexus" {
-  version = "2.5.0"
+  version     = "2.5.0"
+  constraints = ">= 0.1.0"
   hashes = [
     "h1:/xUNKX1nMoA3E3Sq1hyU64izf8vSefWmlziXufJFbQo=",
     "zh:1a8b42a3070c7b2ddb83e4bcd8457f4ba67757bff130b7e75920c3dda115bdff",
